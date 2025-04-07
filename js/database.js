@@ -1,0 +1,48 @@
+let users = [
+  {
+    id: 1,
+    username: "Bret",
+    email: "Sicere@april.biz",
+    password: "sincere@123",
+    role: "ADMIN",
+    status: true,
+    birthday: "31/01/1995",
+  },
+  {
+    id: 2,
+    username: "Antonette",
+    email: "Shanna@melisssa.tv",
+    password: "shanna@123",
+    role: "USER",
+    status: false,
+    birthday: "02/01/1994",
+  },
+  {
+    id: 3,
+    username: "Ervin Howell",
+    email: "evhowell@vipz.vn",
+    password: "evhowell@1",
+    role: "USER",
+    status: true,
+    birthday: "25/10/1985",
+  },
+  {
+    id: 4,
+    username: "Lena Lee",
+    email: "lenalee21@zmail.com",
+    password: "lee@lena1",
+    role: "USER",
+    status: false,
+    birthday: "20/07/1999",
+  },
+  {
+    id: 5,
+    username: "Edward Newgate",
+    email: "whitebeard@yahee.vliz",
+    password: "acewasdead@123",
+    role: "ADMIN",
+    status: true,
+    birthday: "01/10/1970",
+  },
+];
+localStorage.usersDatabase = JSON.stringify(users);

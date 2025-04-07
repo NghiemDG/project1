@@ -1,0 +1,19 @@
+a {
+  cursor: grab;
+}
+body {
+  height: 710px;
+}
+table {
+  height: 404px;
+}
+td {
+  align-content: center;
+}
+th {
+  font-size: smaller;
+  opacity: 50%;
+}
+.rounded-pill {
+  text-align: start;
+}
