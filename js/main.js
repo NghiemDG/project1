@@ -8,14 +8,15 @@ function render() {
   for (let i = 0; i < users.length; i++) {
     if (users[i].status) {
       let html = `<tr>
-                <td>${users[i].id}</td>
+                <td>TR${users[i].id}</td>
                 <td>${users[i].username}</td>
                 <td>${users[i].email}</td>
                 <td>${users[i].role}</td>
                 <td>${users[i].birthday}</td>
                 <td>
                   <div
-                    style="color: rgb(44, 212, 86)"
+                  id="statusTag"
+                    style="color: #12B76A"
                     class="bg-success-subtle rounded-pill"
                   >
                     &bull; Active
@@ -35,13 +36,13 @@ function render() {
       tableBody.innerHTML += html;
     } else {
       let html = `<tr>
-        <td>${users[i].id}</td>
+        <td>TR${users[i].id}</td>
         <td>${users[i].username}</td>
         <td>${users[i].email}</td>
         <td>${users[i].role}</td>
         <td>${users[i].birthday}</td>
         <td>
-         <div style="color: rgb(209, 6, 73)" class="bg-danger-subtle rounded-pill"> &bull; Deactive</div>
+         <div  id="statusTag" style="color: rgb(209, 6, 73)" class="bg-danger-subtle rounded-pill"> &bull; Deactive</div>
         </td>
         <td>
           <button class="border-0 bg-white">

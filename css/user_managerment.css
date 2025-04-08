@@ -17,3 +17,8 @@ th {
 .rounded-pill {
   text-align: start;
 }
+#statusTag {
+  text-align: center;
+  max-width: fit-content;
+  padding: 0 10px;
+}

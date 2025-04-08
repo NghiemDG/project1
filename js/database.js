@@ -1,4 +1,4 @@
-let users = [
+let usersDB = [
   {
     id: 1,
     username: "Bret",
@@ -45,4 +45,4 @@ let users = [
     birthday: "01/10/1970",
   },
 ];
-localStorage.usersDatabase = JSON.stringify(users);
+localStorage.usersDatabase = JSON.stringify(usersDB);

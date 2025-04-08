@@ -4,3 +4,21 @@
 body {
   height: 670px;
 }
+.alert {
+  width: 299px;
+}
+#redalert {
+  color: red;
+}
+#alertCloseBtn {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+#errorAlert,
+#successAlert {
+  opacity: 0;
+}
+input {
+  height: 56px;
+}
