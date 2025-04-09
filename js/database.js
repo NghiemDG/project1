@@ -7,7 +7,7 @@ let usersDB = [
     password: "sincerE123",
     role: "ADMIN",
     status: true,
-    birthday: "31/01/1995",
+    birthday: "1995-31-01",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ let usersDB = [
     password: "Shanna123",
     role: "USER",
     status: false,
-    birthday: "02/01/1994",
+    birthday: "1994-02-01",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ let usersDB = [
     password: "evhoWell1",
     role: "USER",
     status: true,
-    birthday: "25/10/1985",
+    birthday: "1985-25-03",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ let usersDB = [
     password: "leeLena1",
     role: "USER",
     status: false,
-    birthday: "20/07/1999",
+    birthday: "1999-01-12",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ let usersDB = [
     password: "Acewasdead123",
     role: "ADMIN",
     status: true,
-    birthday: "01/10/1970",
+    birthday: "1970-14-12",
   },
 ];
 localStorage.usersDatabase = JSON.stringify(usersDB);
