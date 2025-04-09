@@ -42,19 +42,19 @@
           Your dashboard
         </div>
         <div class="text-primary ms-4 mt-4">
-          <a class="text-decoration-none"
+          <a class="text-decoration-none" href="./dashboard.html"
             ><i class="fa-solid fa-bars"></i> User dashboard</a
           >
         </div>
         <div class="text-primary ms-4 mt-3">
-          <a class="text-decoration-none"
+          <a class="text-decoration-none" href="./add_user.html"
             ><i class="fa-solid fa-star mb-3"></i> Add new User</a
           >
         </div>
 
         <div class="border-top border-2">
           <div class="text-primary ms-4 mt-2">
-            <a class="text-decoration-none"
+            <a class="text-decoration-none" href="./signin.html"
               ><i class="fa-solid fa-door-open"></i> Sign out</a
             >
           </div>
@@ -125,11 +125,12 @@
             </tbody>
           </table>
         </div>
+
         <!-- pages -->
         <div class="row">
           <nav aria-label="...">
             <ul class="pagination">
-              <li class="page-item disabled">
+              <li class="page-item">
                 <a class="page-link">&#8592;</a>
               </li>
               <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -145,9 +146,52 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="deleteModal"
+      tabindex="-1"
+      aria-labelledby="deleteModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="deleteModalLabel">
+              Bạn có chắc muốn xóa người dùng :
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modalHtml" class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              id="deleteBtn"
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Delete & Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal end -->
     <!-- js -->
     <script src="../js/main.js"></script>
-    <!-- <script src="../js/database.js"></script> -->
+    <script src="../js/database.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

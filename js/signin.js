@@ -33,7 +33,7 @@ form.addEventListener("submit", function (event) {
       signinSuccess.style.opacity = 1;
       setTimeout(() => {
         signinSuccess.style.opacity = 0;
-        window.location.href = "./Dashboard.html";
+        window.location.href = "./dashboard.html";
       }, 1500);
     }
   }

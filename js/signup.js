@@ -49,7 +49,7 @@ form.addEventListener("submit", function (e) {
     users.push(newUser);
     localStorage.usersDatabase = JSON.stringify(users);
     setTimeout(() => {
-      window.location.href = "./index.html";
+      window.location.href = "./signin.html";
     }, 1000);
   }
 });

@@ -22,3 +22,6 @@ th {
   max-width: fit-content;
   padding: 0 10px;
 }
+#successAlert {
+  opacity: 0;
+}
