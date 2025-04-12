@@ -3,12 +3,24 @@ let tableBody = document.getElementById("tableBody");
 let currentId = JSON.parse(localStorage.setId);
 let modalHtml = document.getElementById("modalHtml");
 let deleteBtn = document.getElementById("deleteBtn");
+let pages = document.getElementById("pages");
+
 function upData() {
   localStorage.usersDatabase = JSON.stringify(users);
 }
-function render() {
+//Set pages
+function setpages() {
+  pages.innerHTML = "";
+  for (let i = 1; i <= Math.ceil(users.length / 5); i++) {
+    let pageshtml = `<li class="page-item"><a onclick="render(${i})" class="page-link" href="#">${i}</a></li>`;
+    pages.innerHTML += pageshtml;
+  }
+}
+setpages();
+//render table theo page
+function render(page) {
   tableBody.innerHTML = "";
-  for (let i = 0; i < users.length; i++) {
+  for (let i = page * 5 - 5; i <= page * 5 - 1 && i < users.length; i++) {
     if (users[i].status) {
       let html = `<tr>
                 <td>TR${users[i].id}</td>
@@ -65,13 +77,11 @@ function render() {
   }
   upData();
 }
-render();
-// pages
+render(1);
 //delete
 function setCurrentId(id) {
   modalHtml.innerText = "";
   currentId = id;
-  console.log(currentId);
   let deleteUserInfo = `
   Tên : ${users[currentId].username}
   User Code : TR${users[currentId].id}
@@ -82,6 +92,20 @@ function setCurrentId(id) {
 deleteBtn.addEventListener("click", function () {
   users.splice(currentId, 1);
   localStorage.usersDatabase = JSON.stringify(users);
-  render();
+  //trả về page 1 sau khi xóa
+  render(1);
+  setpages();
 });
-//edit
+//search
+// let searchKey = document.getElementById("search");
+
+// searchKey.addEventListener("submit", function (ev) {
+//   function searchByName() {
+//     users = [];
+//     const searchResult = users.filter((element) =>
+//       element.name.includes(searchKey)
+//     );
+//     users = searchResult;
+//   }
+//   render(1);
+// });

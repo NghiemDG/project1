@@ -35,6 +35,7 @@
       </div>
     </nav>
     <!-- navbar end -->
+    <!-- body -->
     <div class="row h-100">
       <!-- sidebar start -->
       <div id="sideBar" class="col-2 border bg-body-secondary h-100">
@@ -70,10 +71,13 @@
         <!-- search box -->
         <div class="row justify-content-end">
           <input
+            id="search"
+            name="search"
             class="col-3 mt-5 me-3"
             type="text"
             placeholder="Search user by name"
           />
+          <i class="d-inline fa-solid fa-magnifying-glass"></i>
         </div>
         <!-- table -->
         <div class="row col-11">
@@ -129,18 +133,10 @@
         <!-- pages -->
         <div class="row">
           <nav aria-label="...">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link">&#8592;</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item active" aria-current="page">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">&#8594;</a>
-              </li>
+            <ul id="pages" class="pagination">
+              <!-- <li class="page-item page-link">&#8592;</li> -->
+
+              <!-- <li class="page-item page-link">&#8594;</li> -->
             </ul>
           </nav>
         </div>
